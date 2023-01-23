@@ -82,12 +82,11 @@ class CollectionDetailsMovie extends React.Component {
                     )
                     :
                     (
-                        <div></div>
-                        // <Link to='/signin' onClick={this.bookWithoutLogin}>
-                        //     <div className='book-now'>
-                        //         <span>BOOK TICKETS</span>
-                        //     </div>
-                        // </Link>
+                        <Link to='/signin' onClick={this.bookWithoutLogin}>
+                            <div className='book-now'>
+                                <span>BOOK TICKETS</span>
+                            </div>
+                        </Link>
                     )
                 }
             </div>

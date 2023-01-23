@@ -22,21 +22,21 @@ const Header = (props) => {
     return (
         <div className='header'>
             <div className='container logo-container'>
-                <Link to='/' className='logo'>Kobir Movie theater</Link>
+                <Link to='/' className='logo'>MovieGo</Link>
             </div>
             <div className='container options'>
                 <Link to='/nowshowing' className='option'>Now Showing</Link>
                 <Link to='/upcoming' className='option'>Upcoming</Link>
                 <Link to='/popular' className='option'>Popular</Link>
             </div>
-            {/* <div className='container sign-in-container'>
+            <div className='container sign-in-container'>
                 {
                     (props.isLoggedIn==='true') ? 
                     (<Link className='log-out' onClick={handleLogout}>Logout</Link>)
                     :
                     (<Link to='/signin' className='sign-in'>Sign In / Register</Link>)
                 }
-            </div> */}
+            </div>
         </div>
     );
 }
